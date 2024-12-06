@@ -11,3 +11,6 @@ Traceback (most recent call last):
 _pickle.UnpicklingError: STACK_GLOBAL requires str
 
 dmc接口现在还不清楚怎么写
+目前想法是不是要换一个bc iq的源码试一试
+PPIL有别的bug
+服务器姑且算是调配好了环境 但报错是一样的
