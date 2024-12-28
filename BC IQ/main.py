@@ -19,7 +19,7 @@ def train(args):
     device = torch.device("cuda" if torch.cuda.is_available() and args.use_gpu else "cpu")
 
     # expert_path = os.path.join(args.expert_dir, args.demo)
-    expert_path = 'd:/NIPPO/BC IQ/experts/CartPole-v1_1000.npy'
+    expert_path = 'D:/NIPPO/BC IQ/experts/Hopper-v2_25.pkl'
     expert_buffer, policy_buffer, replay_buffer, state_mean, state_std = \
         make_buffer(expert_path, args.subsampling_num, args.subsampling_rate, args.use_absorb, args.truncated_len,
                     device)
