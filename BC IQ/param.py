@@ -1,7 +1,7 @@
 import argparse
     
 parser = argparse.ArgumentParser()
-parser.add_argument('--env_id', help='environment ID', default='CartPole-v1')
+parser.add_argument('--env_id', help='environment ID', default='Hopper-v2')
 parser.add_argument('--remark', help='remark str', type=str, default='None')
 parser.add_argument('--seed', help='RNG seed', type=int, default=42)
 parser.add_argument('--algo', type=str, default='dac')
@@ -31,6 +31,6 @@ parser.add_argument('--log_dir', type=str, default='logs/')
 parser.add_argument('--save_dir', type=str, default='model/')
 
 args = parser.parse_args()
-args.demo = args.env_id + '_1000.npy'
+args.demo = args.env_id + '_25.pkl'
 args.absorbing_per_episode = 0 if not args.use_absorb else args.absorbing_per_episode    
 
